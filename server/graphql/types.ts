@@ -63,7 +63,7 @@ const getCustomTypes = (strapi: Strapi, nexus) => {
             );
 
             const contentType = contentTypes.find(
-              (contentType) => contentType.modelName === model.modelName
+              (contentType) => contentType.model.modelName === model.modelName
             );
 
             const searchResult = await getResult(
