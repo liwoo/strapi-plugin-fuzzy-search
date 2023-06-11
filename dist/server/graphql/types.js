@@ -34,7 +34,7 @@ const getCustomTypes = (strapi, nexus) => {
                             contentType: model,
                             usePagination: true,
                         });
-                        const contentType = contentTypes.find((contentType) => contentType.modelName === model.modelName);
+                        const contentType = contentTypes.find((contentType) => contentType.model.modelName === model.modelName);
                         const searchResult = await (0, fuzzySearchService_1.default)(contentType, query, transformedFilters, locale);
                         const resultsResponse = await (0, buildGraphqlResponse_1.default)(searchResult, auth, { start: transformedStart, limit: transformedLimit });
                         if (resultsResponse)
