@@ -1,0 +1,68 @@
+{
+    "name": "strapi-plugin-fuzzy-search",
+    "version": "0.0.0-development",
+    "description": "Register a weighted fuzzy search endpoint for Strapi Headless CMS you can add your content types to in no time.",
+    "strapi": {
+        "displayName": "Fuzzy Search",
+        "name": "fuzzy-search",
+        "description": "Register a weighted fuzzy search endpoint for Strapi Headless CMS you can add your content types to in no time.",
+        "kind": "plugin"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org/",
+        "tag": "latest"
+    },
+    "release": {
+        "branches": [
+            "main",
+            {
+                "name": "beta",
+                "prerelease": true
+            }
+        ]
+    },
+    "dependencies": {
+        "fuzzysort": "2.0.4",
+        "transliteration": "2.3.5"
+    },
+    "peerDependencies": {
+        "@strapi/strapi": "^4.0.8",
+        "@strapi/utils": "^4.0.8",
+        "yup": "^1.0.0"
+    },
+    "author": "@DomDew (https://github.com/DomDew)",
+    "maintainers": [
+        "@DomDew (https://github.com/DomDew)",
+        "@wfproductions (https://github.com/wfproductions)"
+    ],
+    "engines": {
+        "node": ">=14.x.x <=18.x.x",
+        "npm": ">=6.0.0"
+    },
+    "license": "MIT",
+    "main": "strapi-server.js",
+    "types": "dist/index.d.ts",
+    "devDependencies": {
+        "all-contributors-cli": "^6.20.0",
+        "semantic-release": "^21.0.1"
+    },
+    "scripts": {
+        "semantic-release": "semantic-release",
+        "develop": "tsc -w",
+        "build": "tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DomDew/strapi-plugin-fuzzy-search.git"
+    },
+    "keywords": [
+        "strapi",
+        "fuzzysort",
+        "fuzzysearch",
+        "search"
+    ],
+    "bugs": {
+        "url": "https://github.com/DomDew/strapi-plugin-fuzzy-search/issues"
+    },
+    "homepage": "https://github.com/DomDew/strapi-plugin-fuzzy-search#readme"
+}

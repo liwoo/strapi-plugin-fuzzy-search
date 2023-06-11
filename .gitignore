@@ -2,5 +2,4 @@
 .idea/
 server/.DS_Store
 .DS_Store
-/dist
 yarn.lock
